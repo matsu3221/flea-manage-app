@@ -1,0 +1,25 @@
+<div>
+    <button type="button" class="btn m-1 btn-dark" (click)="onCreateButtonClick()" style="position:relative; left:10px; top:20px">Product Create</button>
+</div>
+<div class="container" style="position:relative; top:30px">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products; index as i;">
+                <th scope="row">
+                    <button type="button" class="btn btn-outline-dark m-1" (click)="onSelectRecord(product)">{{i+1}}</button>
+                </th>
+                <td>{{product.first}}</td>
+                <td>{{product.last}}</td>
+                <td>{{product.Handle}}</td>
+            </tr> 
+        </tbody>   
+    </table>
+</div>
