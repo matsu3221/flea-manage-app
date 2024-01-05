@@ -1,1 +1,11 @@
-<p>product-manage works!</p>
+<div class="row g-0">
+    <div class="col-sm-6 col-md-6 p-3 bg-light" style="height: 1250px;">
+        <app-product-list (selectProductEvent)='selectProduct($event)' (createProductEvent)='createProduct()'></app-product-list>       
+    </div>
+    <div class="col-6 col-md-6 p-3 bg-warning-subtle" *ngIf="create">
+        <app-product-create></app-product-create>
+    </div>
+    <div class="col-6 col-md-6 p-3 bg-warning-subtle" *ngIf="read">
+        <app-product-read  [product]="product"></app-product-read>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<img src="./assets/img/写真のフリーアイコン7.jpeg" class="rounded mx-auto d-block">
+<br>
+<form class="mb-3 row align-items-center" style="position:relative; left:70px">
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label fs-4 lign-items-center">出品</label>
+      <button *ngIf="meStatusOff" type="button" class="btn btn-secondary btn-lg" style="position:relative; left:80px" (click)="onClickMe()">メ</button>
+      <button *ngIf="meStatusOn" type="button" class="btn btn-warning btn-lg" style="position:relative; left:80px" (click)="onClickMe()">メ</button>
+      <button *ngIf="peStatusOff" type="button" class="btn btn-secondary btn-lg" style="position:relative; left:90px" (click)="onClickPe()">ペ</button>
+      <button *ngIf="peStatusOn" type="button" class="btn btn-warning btn-lg" style="position:relative; left:90px" (click)="onClickPe()">ペ</button>
+      <button *ngIf="yaStatusOff" type="button" class="btn btn-secondary btn-lg" style="position:relative; left:100px" (click)="onClickYa()">ヤ</button>
+      <button *ngIf="yaStatusOn" type="button" class="btn btn-warning btn-lg" style="position:relative; left:100px" (click)="onClickYa()">ヤ</button>
+      <button *ngIf="raStatusOff" type="button" class="btn btn-secondary btn-lg" style="position:relative; left:110px" (click)="onClickRa()">ラ</button>
+      <button *ngIf="raStatusOn" type="button" class="btn btn-warning btn-lg" style="position:relative; left:110px" (click)="onClickRa()">ラ</button>
+    </div>
+</form>
+<div class="mb-3 row align-items-center" style="position:relative; left:70px">
+    <div class="col-auto">
+        <label  for="inputPassword6" class="col-form-label fs-4 lign-items-center">状態</label>
+    </div>
+    <div class="col-sm-6" style="position:relative; left:50px">
+        <input type="password" id="inputPassword6" class="form-control form-control-lg" aria-labelledby="passwordHelpInline">
+      </div>
+</div>
+<div class="mb-3 row align-items-center" style="position:relative; left:70px">
+    <div class="col-auto">
+        <label  for="inputPassword6" class="col-form-label fs-4 lign-items-center">値段</label>
+    </div>
+    <div class="col-sm-6" style="position:relative; left:50px">
+        <input type="password" id="inputPassword6" class="form-control form-control-lg" aria-labelledby="passwordHelpInline">
+    </div>
+</div>
+<div class="mb-3 row align-items-center" style="position:relative; left:50px">
+    <div class="col-auto">
+        <label  for="inputPassword6" class="col-form-label fs-4 lign-items-center">仕入れ</label>
+    </div>
+    <div class="col-sm-6" style="position:relative; left:50px">
+        <input type="password" id="inputPassword6" class="form-control form-control-lg" aria-labelledby="passwordHelpInline">
+    </div>
+</div>
+<div class="mb-3 row align-items-center" style="position:relative; left:70px">
+    <div class="col-auto">
+        <label  for="inputPassword6" class="col-form-label fs-4 lign-items-center">利益</label>
+      </div>
+    <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext fs-4" id="staticEmail" value="XXXXX円（XX%）" style="position:relative; left:60px">
+    </div>
+</div>
